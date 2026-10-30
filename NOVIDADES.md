@@ -1,5 +1,9 @@
 # Novidades
 
+## 0.8.1
+
+Grafia dos exemplos do formato dos dados: horário, parágrafo e "horas extraordinárias". O painel não muda.
+
 ## 0.8.0
 
 Primeira versão, para o grupo de teste: o painel da audiência de instrução, com o caso, as controvérsias e o

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""preaudi 0.8.0 — monta o painel pré-audiência a partir do JSON. Licença MIT.
+"""preaudi 0.8.1 — monta o painel pré-audiência a partir do JSON. Licença MIT.
 
 Uso:
     python montar.py dados.json --saida painel-pre-audiencia-20016.html
@@ -19,7 +19,7 @@ from pathlib import Path
 AQUI = Path(__file__).resolve().parent
 MODELO = AQUI.parent / "assets" / "preaudi.html"
 
-VERSAO = "0.8.0"
+VERSAO = "0.8.1"
 CREDITO = {"texto": f"PreAudi {VERSAO} — painel de acompanhamento de audiências · desenvolvido por Jorge Araujo",
            "contato": "https://direi.to/contato"}
 

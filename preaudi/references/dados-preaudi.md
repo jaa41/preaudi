@@ -17,7 +17,7 @@ O painel é um modelo HTML fixo. O que muda de processo para processo é só est
 | Campo | Tipo | O que é |
 |---|---|---|
 | `processo` | texto | número do processo (CNJ), `0000000-00.0000.5.04.0000` |
-| `audiencia` | texto | espécie, data, hora e forma — `"Instrução — 09/09/2026, 09h, por videoconferência"`; sem data nos autos: `"Instrução — data não consta dos autos"` |
+| `audiencia` | texto | espécie, data, hora e forma — `"Instrução — 09/09/2026, 9h, por videoconferência"`; sem data nos autos: `"Instrução — data não consta dos autos"` |
 | `autores` | lista de objetos | `{nome, papel}` |
 | `reus` | lista de objetos | `{nome, papel}` |
 | `resumo` | texto | o caso em um parágrafo |
@@ -45,12 +45,12 @@ Uma entrada por parte. O `papel` é livre — `"reclamante"`, `"reclamada"`, `"t
 
 ```json
 {
-  "tema": "Horas extras",
+  "tema": "Horas extraordinárias",
   "pedido": "o que a inicial pede",
   "defesa": "o que a contestação opõe",
   "onus": "reu",
   "prova": "documental (cartões-ponto) e oral",
-  "fundamento": "art. 74, §2º, da CLT; Súmula 338, I, do TST"
+  "fundamento": "art. 74, § 2º, da CLT; Súmula 338, I, do TST"
 }
 ```
 
@@ -63,7 +63,7 @@ Uma entrada por parte. O `papel` é livre — `"reclamante"`, `"reclamada"`, `"t
 ### `provas` — o mapa de provas
 
 ```json
-"provas": [["Horas extras", "cartões-ponto", "parcial", "reu", "faltam 2023-2024"]]
+"provas": [["Horas extraordinárias", "cartões-ponto", "parcial", "reu", "faltam 2023-2024"]]
 ```
 
 Ordem fixa: `[tema, prova, estado, ônus, providência]`. Um item para **cada** ponto controvertido.
@@ -96,7 +96,7 @@ acordo — mínimo e máximo**.
 ```json
 "conciliacao": {
   "quadro": [
-    ["Horas extras — provável (ré não juntou cartões; Súmula 338, I, do TST)", "R$ 18.400,00"],
+    ["Horas extraordinárias — provável (ré não juntou cartões; Súmula 338, I, do TST)", "R$ 18.400,00"],
     ["Diferenças de comissões — incerta (depende da prova oral)", "R$ 9.000,00"],
     ["Dano moral — improvável (ônus do reclamante, sem indício nos autos): fora da faixa", "R$ 15.000,00"],
     ["Honorários pedidos pelo perito (quem paga depende do resultado)", "R$ 3.500,00"],
@@ -130,7 +130,7 @@ acordo — mínimo e máximo**.
 ```json
 {
   "processo": "0000000-00.2026.5.04.0005",
-  "audiencia": "Instrução — 09/09/2026, 09h, por videoconferência",
+  "audiencia": "Instrução — 09/09/2026, 9h, por videoconferência",
   "autores": [{"nome": "…", "papel": "reclamante"}],
   "reus": [{"nome": "…", "papel": "reclamada"}],
   "resumo": "…",
